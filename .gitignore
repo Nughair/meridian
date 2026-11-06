@@ -48,6 +48,10 @@ discord-signals.json
 # Claude Code runtime lock
 .claude/scheduled_tasks.lock
 
+# Paper scan lock and partial writes. The ledger itself is committed evidence.
+paper/state/*.lock
+paper/state/*.tmp
+
 # Standalone monitor state and process lock
 wallet-monitor-state.json
 wallet-monitor-state.json.tmp

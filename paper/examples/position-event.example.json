@@ -1,0 +1,22 @@
+{
+  "synthetic": true,
+  "doNotApply": true,
+  "note": "Schema example only. This is not a fill, not a price, and not an open position.",
+  "type": "paper_position_opened",
+  "mode": "PAPER",
+  "deliver": false,
+  "destination": "@nughairBot",
+  "at": "1970-01-01T00:00:00.000Z",
+  "positionId": "PAPER-EXAMPLE",
+  "mint": "EXAMPLE_MINT",
+  "pool": "EXAMPLE_POOL",
+  "allocationUsd": 100,
+  "strategy": "bid_ask",
+  "binsBelow": 35,
+  "binsAbove": 0,
+  "chainTx": null,
+  "simulatedFill": true,
+  "feesEarnedUsd": 0,
+  "entryPoolPrice": null,
+  "entrySolUsd": null
+}
