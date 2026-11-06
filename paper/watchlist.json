@@ -1,0 +1,4 @@
+{
+  "wallets": [],
+  "note": "Live entries require fresh in-range quote-side LP deposits from this list. An empty list produces no signal. Do not add wallets that were not supplied by the operator."
+}

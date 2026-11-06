@@ -1,0 +1,70 @@
+{
+  "mode": "PAPER",
+  "broadcast": false,
+  "durableService": false,
+  "auditedCommit": "cb3a2f0d99c4938c8f9b2e2ca164bf98495ad2ef",
+  "chain": "solana",
+  "venue": "meteora-dlmm",
+  "scannedAt": "2026-11-06T17:44:04.429Z",
+  "code": "no_tracked_wallets",
+  "summary": {
+    "cashUsd": 1000,
+    "deployedCostUsd": 0,
+    "marketValueUsd": 0,
+    "equityUsd": 1000,
+    "equityStatus": "cash_only",
+    "feesEarnedUsd": 0,
+    "openPositions": 0
+  },
+  "sol": {
+    "solUsd": 89.67602213003211,
+    "source": "https://api.jup.ag/price/v3?ids=So11111111111111111111111111111111111111112",
+    "fetchedAt": "2026-11-06T17:44:04.495Z",
+    "attempts": []
+  },
+  "sizing": {
+    "allocationUsd": 100,
+    "allocationLamports": 1115125288,
+    "allocationSol": 1.115125288,
+    "cashSol": 11.151252879,
+    "gasReserveSol": 0.2,
+    "gasReserveUsd": 17.935204426006422,
+    "solUsd": 89.67602213003211,
+    "ok": true,
+    "code": "sized",
+    "needLamports": 1315125288
+  },
+  "fundedSlots": 3,
+  "cashAfterFullBookUsd": 700,
+  "reproduction": "partial",
+  "gaps": [
+    "Entries require fresh tracked-wallet convergence. This repository does not ship a smart-wallet list.",
+    "The live bot reads mint authority and remaining LP exposure through Solana RPC. Paper has no RPC client; a missing proof does not pass.",
+    "Live submits use the Meteora SDK, a 1 percent slippage tolerance, and a bin-array initialization check. Paper does not turn those into a price or a fee.",
+    "The standalone bot does not rebalance. Out-of-range handling is an exit rule.",
+    "Live fee and impermanent-loss figures come from Meteora after a real deposit. Pool APR and fee/active-TVL are not paper fees.",
+    "USD 100 replaces computeDeployAmount for this book. The 0.5 SOL minimum, 0.2 SOL gas reserve, and maximum of 3 positions still apply.",
+    "Exits follow the fast poller: the same signal must appear on 2 observations. The 10-minute manageOnce path can close on one read; paper does not.",
+    "Local blacklist, deployer blocklist, and pool-memory cooldowns are operator files. Paper does not read them.",
+    "One cloud run is not a durable 24/7 service."
+  ],
+  "event": {
+    "type": "scan_completed",
+    "mode": "PAPER",
+    "deliver": false,
+    "destination": "@nughairBot",
+    "at": "2026-11-06T17:44:04.429Z",
+    "code": "no_tracked_wallets",
+    "cashUsd": 1000,
+    "equityUsd": 1000,
+    "equityStatus": "cash_only",
+    "deployedCostUsd": 0,
+    "feesEarnedUsd": 0,
+    "openPositions": [],
+    "solUsd": 89.67602213003211,
+    "solSource": "https://api.jup.ag/price/v3?ids=So11111111111111111111111111111111111111112",
+    "solFetchedAt": "2026-11-06T17:44:04.495Z",
+    "fundedSlots": 3,
+    "chainTx": null
+  }
+}
