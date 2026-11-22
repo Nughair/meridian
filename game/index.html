@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mica — Bukit Arang</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Mica</h1>
+      <p>Bukit Arang</p>
+    </header>
+    <div id="frame">
+      <canvas id="game" width="256" height="144"></canvas>
+      <div id="win" hidden>
+        <div class="card">
+          <h2>Finis!</h2>
+          <p id="win-coins">Koin: 0</p>
+          <button type="button" id="again">Main lagi</button>
+        </div>
+      </div>
+    </div>
+    <div id="touch">
+      <div class="move">
+        <button type="button" id="btn-left" aria-label="Kiri" aria-pressed="false">◀</button>
+        <button type="button" id="btn-right" aria-label="Kanan" aria-pressed="false">▶</button>
+      </div>
+      <button type="button" id="btn-jump" aria-label="Lompat" aria-pressed="false">▲</button>
+    </div>
+    <p id="hud" class="sr" aria-live="polite">Koin: 0</p>
+    <p class="hint">A/D atau ←/→ bergerak · Spasi lompat · tahan untuk lompat tinggi · injak musuh dari atas</p>
+  </main>
+  <script type="module" src="./game.js"></script>
+</body>
+</html>
